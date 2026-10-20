@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ทริป 2 ล้อ 4 ล้อ บุกภูทับเบิก 2026 🏍️🚗💨</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Prompt & Sarabun -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Prompt', 'sans-serif'],
+            body: ['Sarabun', 'sans-serif'],
+          },
+          colors: {
+            skyway: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            },
+            mountain: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      font-family: 'Prompt', sans-serif;
+      line-height: 1.6;
+      word-break: break-word;
+    }
+    .font-body {
+      font-family: 'Sarabun', sans-serif;
+      line-height: 1.7;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scroll {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .glass-card-dark {
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .photo-card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .photo-card-hover:active {
+      transform: scale(0.98);
+    }
+    /* Balanced Thai line breaks */
+    .thai-balanced {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="bg-slate-100/90 text-slate-800 antialiased min-h-screen pb-28 selection:bg-mountain-600 selection:text-white">
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 opacity-0 pointer-events-none transform -translate-y-4 max-w-sm w-11/12">
+    <div class="bg-slate-900/95 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 backdrop-blur-md border border-white/10 text-sm">
+      <i id="toast-icon" class="fa-solid fa-circle-check text-mountain-400 text-lg"></i>
+      <span id="toast-message" class="font-medium">แจ้งเตือน</span>
+    </div>
+  </div>
+
+  <!-- Photo Lightbox Modal -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex flex-col items-center justify-center p-3 sm:p-6" onclick="closeLightbox(event)">
+    <button onclick="closeLightbox()" class="absolute top-4 right-4 z-50 w-11 h-11 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center text-lg transition active:scale-90" aria-label="ปิดรูป">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="max-w-4xl max-h-[85vh] w-full flex flex-col items-center" onclick="event.stopPropagation()">
+      <div class="relative overflow-hidden rounded-2xl shadow-2xl border border-white/20 bg-slate-900 max-h-[75vh]">
+        <img id="lightbox-img" src="" alt="ขยายรูปภาพ" class="max-h-[75vh] w-auto object-contain mx-auto transition-transform duration-300">
+      </div>
+      <div class="mt-3 text-center text-white px-4">
+        <h3 id="lightbox-title" class="font-bold text-base sm:text-lg text-emerald-300">ชื่อจุดแวะพัก</h3>
+        <p id="lightbox-desc" class="text-xs sm:text-sm text-slate-300 font-body mt-0.5 max-w-lg mx-auto">คำอธิบายภาพถ่าย</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION WITH CRYSTAL CLEAR PHOTO BANNER -->
+  <header class="relative overflow-hidden bg-slate-900 text-white pb-14 shadow-2xl">
+    <!-- Background Hero Photo: Crystal Clear without dots -->
+    <div class="absolute inset-0 z-0">
+      <img src="photos/header_hero.png" alt="ภูทับเบิก ทริป 2 ล้อ 4 ล้อ" class="w-full h-full object-cover object-center filter brightness-95 contrast-105">
+      <!-- Soft clear gradient overlay that transitions smoothly to bottom without obscuring the scenery -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-slate-900/90"></div>
+    </div>
+
+    <!-- Atmospheric Glows -->
+    <div class="absolute -right-20 -top-20 w-72 h-72 bg-sky-500 rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+    <div class="absolute -left-20 bottom-10 w-72 h-72 bg-emerald-500 rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+
+    <div class="relative max-w-xl mx-auto text-center z-10 pt-7 px-4">
+      <!-- Live Badge Pill -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/20 text-xs font-medium text-sky-200 mb-3 shadow-lg">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-semibold tracking-wide">ทริป 2 ล้อ & 4 ล้อ บุกยอดดอย 2026</span>
+      </div>
+      
+      <!-- Main Header Title (Mobile Friendly) -->
+      <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight drop-shadow-lg text-white mb-2 leading-snug thai-balanced">
+        ทริป 2 ล้อ 4 ล้อ<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-teal-200 to-emerald-300">
+          บุกพิชิตภูทับเบิก! ⛰️
+        </span>
+      </h1>
+
+      <p class="text-xs sm:text-sm text-sky-100/90 font-light max-w-sm mx-auto mb-4 leading-relaxed">
+        ระยะทางรวม ~410 กม. • สู่สายหมอกและความหนาว 16°C
+      </p>
+
+      <!-- Quick Fleet Summary Card (Mobile Ergonomic) -->
+      <div class="bg-slate-900/80 backdrop-blur-md rounded-2xl p-3.5 border border-white/15 max-w-md mx-auto mb-5 text-left shadow-xl">
+        <div class="flex items-center justify-between text-xs text-sky-300 font-bold mb-2.5 border-b border-white/10 pb-2">
+          <span class="flex items-center gap-1.5">
+            <i class="fa-solid fa-motorcycle text-emerald-400"></i> รายชื่อรถและผู้ร่วมขบวน
+          </span>
+          <span class="text-[11px] bg-sky-500/20 text-sky-200 px-2 py-0.5 rounded-full border border-sky-400/30">
+            รวม 4 คัน
+          </span>
+        </div>
+
+        <!-- Clean single-column rider rows on mobile -->
+        <div class="space-y-2 text-xs">
+          <!-- Rider 1: Boss -->
+          <div class="flex items-center justify-between bg-white/5 p-2 rounded-xl border border-white/5">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-sky-500 text-white font-bold flex items-center justify-center text-[11px]">1</span>
+              <div>
+                <span class="font-bold text-white">บอส</span>
+                <span class="text-[11px] text-sky-200 ml-1">XMAX 300</span>
+              </div>
+            </div>
+            <span class="text-[10px] bg-sky-400/20 text-sky-300 font-semibold px-2 py-0.5 rounded-md">
+              หัวขบวน / ไลน์ซ้าย
+            </span>
+          </div>
+
+          <!-- Rider 2: Pop & Fan -->
+          <div class="flex items-center justify-between bg-white/5 p-2 rounded-xl border border-white/5">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-blue-500 text-white font-bold flex items-center justify-center text-[11px]">2</span>
+              <div>
+                <span class="font-bold text-white">ป็อบ & แฟน</span>
+                <span class="text-[11px] text-blue-200 ml-1">XMAX 300</span>
+              </div>
+            </div>
+            <span class="text-[10px] bg-blue-400/20 text-blue-300 font-semibold px-2 py-0.5 rounded-md">
+              กลางขบวน
+            </span>
+          </div>
+
+          <!-- Rider 3: Pae -->
+          <div class="flex items-center justify-between bg-white/5 p-2 rounded-xl border border-white/5">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-rose-500 text-white font-bold flex items-center justify-center text-[11px]">3</span>
+              <div>
+                <span class="font-bold text-white">เป้</span>
+                <span class="text-[11px] text-rose-200 ml-1">FORZA 350</span>
+              </div>
+            </div>
+            <span class="text-[10px] bg-rose-400/20 text-rose-300 font-semibold px-2 py-0.5 rounded-md">
+              สลับไลน์ฟันปลา
+            </span>
+          </div>
+
+          <!-- Truck: Support Team -->
+          <div class="flex items-center justify-between bg-emerald-950/40 p-2 rounded-xl border border-emerald-500/20">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center text-[11px]">
+                <i class="fa-solid fa-truck-pickup text-[10px]"></i>
+              </span>
+              <div>
+                <span class="font-bold text-emerald-200">ทีมซัพพอร์ต</span>
+                <span class="text-[11px] text-slate-300 ml-1">รถกระบะ ออฟ</span>
+              </div>
+            </div>
+            <span class="text-[10px] bg-amber-400/20 text-amber-300 font-semibold px-2 py-0.5 rounded-md border border-amber-400/30">
+              ตามไปทีหลัง
+            </span>
+          </div>
+        </div>
+
+        <div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-300">
+          <span><i class="fa-regular fa-clock text-amber-300 mr-1"></i>2 ล้อล้อหมุน: 04:00 น.</span>
+          <span><i class="fa-solid fa-campground text-emerald-400 mr-1"></i>นัดพบ: ภูทับเบิก</span>
+        </div>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5">
+        <a href="https://www.google.com/maps/dir/Lam+Luk+Ka+Subdistrict+Municipality+Office,+WPHQ%2BV35,+Bueng+Kham+Phroi,+Lam+Luk+Ka+District,+Pathum+Thani+12150/Khlong+Ha+Health+Center,+3PR6%2B27J,+Khlong+Ha,+Khlong+Luang+District,+Pathum+Thani+12120/PTT+Station+(Petrol%2BEV),+RWP6%2BH2M,+Di+Lang,+Phatthana+Nikhom+District,+Lopburi+15220/PTT+Station+(Petrol%2BEV)+Pattanapol+Petroleum,+Thanon+Saeaburi+-+Lomsak,+Bueng+Sam+Phan,+Bueng+Sam+Phan+District,+Phetchabun+67160/Wat+Phra+That+Pha+Sorn+Kaew,+95,+Khaem+Son,+Khao+Kho+District,+Phetchabun+67280/%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%9A%E0%B8%9A%E0%B8%B4%E0%B8%81+%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97+366+Tambon+Ban+Noen,+Lom+Kao+District,+Phetchabun+67120/The+World+Phu+Thap+Boek,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%8814+Tambon+Wang+Ban,+Lom+Kao+District,+Phetchabun+67120/@15.4318282,99.6290676,748943m/data=!3m2!1e3!4b1!4m44!4m43!1m5!1m1!1s0x311d7bbf361825c5:0x509557abcf6de3f3!2m2!1d100.7378479!2d13.9296307!1m5!1m1!1s0x311d822a845a1261:0x673b460a2afed04d!2m2!1d100.7106403!2d14.0901324!1m5!1m1!1s0x311e0b6af00dae8f:0x36af19c8bb121dbe!2m2!1d100.9100535!2d14.8364621!1m5!1m1!1s0x311fc10000000001:0x4d218c5efb5cfd67!2m2!1d101.0066568!2d15.8100806!1m5!1m1!1s0x31204347c0cca891:0xea28cf0075b52c82!2m2!1d101.0509634!2d16.790141!1m5!1m1!1s0x3120592a0f0795d9:0xef4f1f63cfdbfb73!2m2!1d101.1083476!2d16.8950347!1m5!1m1!1s0x3120592465ee4e97:0xbcd301799dab4956!2m2!1d101.1292749!2d16.9422411!3e9" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold text-xs sm:text-sm shadow-xl active:scale-95 transition">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>เปิด Google Maps นำทาง</span>
+        </a>
+        <button onclick="shareTrip()" class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-2xl bg-white/15 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-medium text-xs sm:text-sm active:scale-95 transition">
+          <i class="fa-solid fa-share-nodes text-sky-300"></i>
+          <span>แชร์ทริป</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mountain Curve Wave Shape -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none z-10">
+      <svg class="relative block w-full h-7 text-slate-100/90" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,50 C650,140 900,10 1200,60 L1200,120 L0,120 Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="max-w-xl mx-auto px-4 -mt-6 relative z-20 space-y-5">
+
+    <!-- CARD 1: Key Trip Stats & Progress Tracker -->
+    <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-xl border border-white/80 ring-1 ring-slate-200/50">
+      <div class="grid grid-cols-3 gap-2 text-center pb-3.5 border-b border-slate-100">
+        <div class="p-1">
+          <div class="text-[11px] font-medium text-slate-400 mb-0.5">ระยะทางรวม</div>
+          <div class="text-lg sm:text-xl font-bold text-sky-700">~410 <span class="text-xs font-normal text-slate-500">กม.</span></div>
+        </div>
+        <div class="p-1 border-x border-slate-100">
+          <div class="text-[11px] font-medium text-slate-400 mb-0.5">เวลาเดินทาง</div>
+          <div class="text-lg sm:text-xl font-bold text-mountain-700">~9-10 <span class="text-xs font-normal text-slate-500">ชม.</span></div>
+        </div>
+        <div class="p-1">
+          <div class="text-[11px] font-medium text-slate-400 mb-0.5">ขบวนรถ</div>
+          <div class="text-lg sm:text-xl font-bold text-slate-800">3 + 1 <span class="text-xs font-normal text-slate-500">คัน</span></div>
+        </div>
+      </div>
+
+      <!-- Live Trip Progress Tracker -->
+      <div class="pt-3.5">
+        <div class="flex items-center justify-between text-xs font-semibold mb-2">
+          <span class="text-slate-700 flex items-center gap-1.5">
+            <i class="fa-solid fa-flag-checkered text-mountain-600"></i> ความคืบหน้าการเดินทาง
+          </span>
+          <span id="progress-text" class="text-sky-700 bg-sky-100 px-2 py-0.5 rounded-full font-bold text-[11px]">0 / 6 จุดแวะ (0%)</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-3 overflow-hidden p-0.5 border border-slate-200">
+          <div id="progress-bar" class="bg-gradient-to-r from-sky-500 via-teal-500 to-mountain-500 h-full rounded-full transition-all duration-500 w-0"></div>
+        </div>
+        <div class="flex justify-between items-center mt-2 text-[11px] text-slate-400">
+          <span>คลองห้า 04:00 น.</span>
+          <span>ถึงภูทับเบิก ~13:00 น.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2: TRIP MEMBERS & CREW (With สมาชิกทริป.jpg) -->
+    <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-xl border border-white/80 ring-1 ring-slate-200/50 overflow-hidden">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-users text-sky-600"></i> สมาชิกผู้ร่วมทริป & กองหนุน
+        </h2>
+        <span class="text-[11px] bg-sky-50 text-sky-700 font-semibold px-2.5 py-0.5 rounded-full border border-sky-200">
+          <i class="fa-solid fa-camera mr-1"></i>ทีมบุกเบิก
+        </span>
+      </div>
+
+      <!-- Members Photo with Lightbox trigger -->
+      <div class="relative rounded-2xl overflow-hidden shadow-md group cursor-pointer border border-slate-200/80 photo-card-hover mb-3" onclick="openLightbox('photos/trip_members.jpg', 'สมาชิกทริป 2 ล้อ & 4 ล้อ บุกภูทับเบิก', 'ภาพรวมทีมนักบิดและทีมเซอร์วิส พร้อมลุยทริปพิชิตสายหมอก')">
+        <img src="photos/trip_members.jpg" alt="สมาชิกทริป ภูทับเบิก" class="w-full h-52 sm:h-64 object-cover object-center transition duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-90 group-hover:opacity-100 transition"></div>
+        
+        <div class="absolute top-2.5 right-2.5 bg-black/60 backdrop-blur-md text-white text-[10px] sm:text-xs px-2.5 py-1 rounded-full flex items-center gap-1.5 border border-white/20">
+          <i class="fa-solid fa-magnifying-glass-plus text-sky-400"></i> แตะดูรูปใหญ่
+        </div>
+
+        <div class="absolute bottom-2.5 left-3 right-3 text-white">
+          <div class="text-[11px] text-emerald-300 font-medium flex items-center gap-1 mb-0.5">
+            <i class="fa-solid fa-shield-heart"></i> ไปด้วยกัน กลับด้วยกัน ปลอดภัยทุกคน
+          </div>
+          <div class="text-sm sm:text-base font-bold drop-shadow">
+            สมาชิกทริป 2 ล้อ 3 คัน & รถกระบะเซอร์วิส
+          </div>
+        </div>
+      </div>
+
+      <!-- Rider Roster in Photo Section -->
+      <div class="grid grid-cols-2 gap-2 text-xs font-body">
+        <div class="bg-slate-50 p-2 rounded-xl border border-slate-100 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+          <div>
+            <div class="font-bold text-slate-800">บอส</div>
+            <div class="text-[10px] text-slate-500">XMAX 300</div>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-2 rounded-xl border border-slate-100 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <div>
+            <div class="font-bold text-slate-800">ป็อบ & แฟน</div>
+            <div class="text-[10px] text-slate-500">XMAX 300</div>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-2 rounded-xl border border-slate-100 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+          <div>
+            <div class="font-bold text-slate-800">เป้</div>
+            <div class="text-[10px] text-slate-500">FORZA 350</div>
+          </div>
+        </div>
+        <div class="bg-emerald-50/70 p-2 rounded-xl border border-emerald-100 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <div>
+            <div class="font-bold text-emerald-900">ทีมซัพพอร์ต</div>
+            <div class="text-[10px] text-emerald-700">กระบะขนสัมภาระ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: FULL-WIDTH RIDER CARDS (Mobile Ergonomic) -->
+    <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-lg border border-white/80 ring-1 ring-slate-200/50">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-motorcycle text-sky-600"></i> ยานพาหนะร่วมขบวน
+        </h2>
+        <span class="text-xs text-slate-400 font-medium">รวม 4 คัน</span>
+      </div>
+
+      <!-- 2-Wheelers Group (Departing 04:00 AM) -->
+      <div class="mb-4">
+        <div class="text-xs font-bold text-slate-600 uppercase tracking-wide mb-2 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-sky-500"></span> ขบวน 2 ล้อหลัก (ออกเดินทาง 04:00 น.)
+        </div>
+
+        <div class="space-y-2.5">
+          <!-- Rider Card 1: Boss -->
+          <div class="bg-gradient-to-r from-sky-50 via-sky-50/80 to-blue-50/50 p-3.5 rounded-2xl border border-sky-200/80 shadow-sm">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex flex-col items-center justify-center font-bold text-xs shadow-md shadow-sky-600/30 shrink-0">
+                  <span class="text-[10px] opacity-80 leading-none">คันที่</span>
+                  <span class="text-sm leading-none font-extrabold">1</span>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm sm:text-base font-extrabold text-slate-900">บอส</span>
+                    <span class="text-[10px] bg-sky-600 text-white font-bold px-2 py-0.5 rounded-full">
+                      หัวขบวน / ไลน์ซ้าย
+                    </span>
+                  </div>
+                  <div class="text-xs font-bold text-sky-800">
+                    Yamaha XMAX 300
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 pt-2 border-t border-sky-100 flex items-center justify-between text-[11px] text-slate-500 font-body">
+              <span><i class="fa-solid fa-compass text-sky-600 mr-1"></i>คุมไลน์นำทางขบวนหลัก</span>
+              <span class="text-sky-700 font-semibold">ออก 04:00 น.</span>
+            </div>
+          </div>
+
+          <!-- Rider Card 2: Pop & Fan -->
+          <div class="bg-gradient-to-r from-blue-50 via-blue-50/80 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-200/80 shadow-sm">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex flex-col items-center justify-center font-bold text-xs shadow-md shadow-blue-600/30 shrink-0">
+                  <span class="text-[10px] opacity-80 leading-none">คันที่</span>
+                  <span class="text-sm leading-none font-extrabold">2</span>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm sm:text-base font-extrabold text-slate-900">ป็อบ & แฟน</span>
+                    <span class="text-[10px] bg-blue-600 text-white font-bold px-2 py-0.5 rounded-full">
+                      กลางขบวน
+                    </span>
+                  </div>
+                  <div class="text-xs font-bold text-blue-900">
+                    Yamaha XMAX 300
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 pt-2 border-t border-blue-100 flex items-center justify-between text-[11px] text-slate-500 font-body">
+              <span><i class="fa-solid fa-users text-blue-600 mr-1"></i>บิดคู่ใจ วิ่งตามไลน์หัวขบวน</span>
+              <span class="text-blue-700 font-semibold">ออก 04:00 น.</span>
+            </div>
+          </div>
+
+          <!-- Rider Card 3: Pae -->
+          <div class="bg-gradient-to-r from-rose-50 via-rose-50/80 to-orange-50/50 p-3.5 rounded-2xl border border-rose-200/80 shadow-sm">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex flex-col items-center justify-center font-bold text-xs shadow-md shadow-rose-600/30 shrink-0">
+                  <span class="text-[10px] opacity-80 leading-none">คันที่</span>
+                  <span class="text-sm leading-none font-extrabold">3</span>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm sm:text-base font-extrabold text-slate-900">เป้</span>
+                    <span class="text-[10px] bg-rose-600 text-white font-bold px-2 py-0.5 rounded-full">
+                      สลับไลน์ฟันปลา
+                    </span>
+                  </div>
+                  <div class="text-xs font-bold text-rose-900">
+                    Honda FORZA 350
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 pt-2 border-t border-rose-100 flex items-center justify-between text-[11px] text-slate-500 font-body">
+              <span><i class="fa-solid fa-arrows-split-up-and-left text-rose-600 mr-1"></i>ทิ้งระยะปลอดภัย สลับไลน์ฟันปลา</span>
+              <span class="text-rose-700 font-semibold">ออก 04:00 น.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Wheelers Group: Pickup (Follows Later) -->
+      <div>
+        <div class="text-xs font-bold text-emerald-800 uppercase tracking-wide mb-2 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span> หน่วยซัพพอร์ต 4 ล้อ (ออกตามไปทีหลัง)
+        </div>
+
+        <div class="bg-gradient-to-br from-emerald-50 via-mountain-50/80 to-teal-50 p-3.5 rounded-2xl border-2 border-dashed border-emerald-300">
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 rounded-xl bg-mountain-600 text-white flex items-center justify-center text-lg shadow-md shadow-mountain-600/30 shrink-0">
+              <i class="fa-solid fa-truck-pickup"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between gap-1 flex-wrap">
+                <span class="text-sm sm:text-base font-extrabold text-slate-900">ทีมซัพพอร์ตกระบะเซอร์วิส</span>
+                <span class="text-[10px] bg-amber-100 text-amber-900 font-bold px-2.5 py-0.5 rounded-full border border-amber-300">
+                  <i class="fa-regular fa-clock mr-1"></i>ออกตามไปทีหลัง
+                </span>
+              </div>
+              <div class="text-xs font-bold text-mountain-800 mt-0.5">
+                รถกระบะ 1 คัน • เต็นท์หลังคา + ขนสัมภาระและเสบียง
+              </div>
+              <p class="text-[11px] text-slate-600 font-body mt-1 leading-relaxed">
+                เดินทางอิสระตามความเหมาะสม บรรทุกเต็นท์และอุปกรณ์แคมป์ปิ้งไปสมทบที่ปลายทาง
+              </p>
+            </div>
+          </div>
+          
+          <div class="mt-2.5 pt-2 border-t border-emerald-200/80 flex items-center justify-between text-[11px] text-mountain-800 font-medium">
+            <span><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i>นัดพบปลายทาง:</span>
+            <span class="font-bold">เดอะเวิลด์ & ม่อนทับเบิก</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4: PHU THAP BOEK LIVE WEATHER ESTIMATE -->
+    <div class="glass-card-dark text-white rounded-3xl p-4 sm:p-5 shadow-xl border border-slate-700/80 relative overflow-hidden">
+      <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-teal-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+      <div class="flex items-center justify-between mb-2.5 relative z-10">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-cloud-sun text-teal-400 text-base sm:text-lg"></i>
+          <div>
+            <h3 class="text-sm font-bold text-white">สภาพอากาศยอดดอยภูทับเบิก</h3>
+            <p class="text-[11px] text-slate-400 font-body">ความสูง 1,768 ม. จากระดับน้ำทะเล</p>
+          </div>
+        </div>
+        <span class="text-[11px] bg-teal-500/20 text-teal-300 border border-teal-500/30 px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+          <i class="fa-solid fa-temperature-arrow-down text-sky-400"></i> อากาศเย็น
+        </span>
+      </div>
+
+      <div class="grid grid-cols-3 gap-2 text-center py-2 relative z-10 border-y border-slate-700/60 my-2">
+        <div class="p-1">
+          <div class="text-[10px] text-slate-400">อุณหภูมิ</div>
+          <div class="text-lg sm:text-xl font-extrabold text-teal-300">16 - 22°C</div>
+        </div>
+        <div class="p-1 border-x border-slate-700/60">
+          <div class="text-[10px] text-slate-400">โอกาสเกิดหมอก</div>
+          <div class="text-lg sm:text-xl font-extrabold text-sky-300">85%</div>
+        </div>
+        <div class="p-1">
+          <div class="text-[10px] text-slate-400">ลมยอดภู</div>
+          <div class="text-lg sm:text-xl font-extrabold text-amber-300">15 <span class="text-[10px] font-normal text-slate-400">km/h</span></div>
+        </div>
+      </div>
+
+      <p class="text-xs font-body text-slate-300 mt-2 flex items-center gap-1.5 relative z-10 leading-relaxed">
+        <i class="fa-solid fa-circle-info text-sky-400 shrink-0"></i> เตรียมเสื้อกันลมและเสื้อกันหนาวหนาๆ ลมแรงช่วงค่ำและเช้าตรู่
+      </p>
+    </div>
+
+    <!-- SECTION 5: DETAILED INTERACTIVE TIMELINE (WITH REAL PHOTOS & LIGHTBOX) -->
+    <div>
+      <div class="flex items-center justify-between mb-3 px-1">
+        <h2 class="text-base sm:text-lg font-bold text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-route text-mountain-600"></i> แผนการเดินทาง & จุดแวะพัก
+        </h2>
+        <span class="text-xs text-slate-400">ติ๊กเมื่อถึงจุดหมาย</span>
+      </div>
+
+      <div class="relative pl-6 space-y-5 before:content-[''] before:absolute before:left-3 before:top-4 before:bottom-4 before:w-0.5 before:bg-gradient-to-b before:from-sky-500 before:via-teal-500 before:to-mountain-600">
+
+        <!-- STOP 1: สำนักงานเทศบาลตำบลลำลูกกา -->
+        <div class="relative group" id="stop-card-1">
+          <button onclick="toggleStop(1)" class="stop-marker absolute -left-6 top-3 w-6 h-6 rounded-full bg-white border-2 border-sky-500 shadow-md flex items-center justify-center text-[11px] font-bold text-sky-700 transition active:scale-90" title="กดติ๊กสถานะ">
+            <span class="marker-text" id="marker-text-1">1</span>
+          </button>
+
+          <div class="glass-card rounded-3xl p-4 shadow-md border border-white/80 ring-1 ring-slate-200/50">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div class="flex-1 min-w-0">
+                <span class="inline-block text-[11px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 mb-1">
+                  <i class="fa-regular fa-clock"></i> 03:40 น. (ล้อหมุน)
+                </span>
+                <h3 class="text-base font-bold text-slate-800 leading-snug">1. สำนักงานเทศบาลตำบลลำลูกกา</h3>
+                <p class="text-xs text-slate-500">จุดสตาร์ทแรกของทีมลำลูกกา</p>
+              </div>
+              <label class="flex items-center gap-1 cursor-pointer shrink-0 pt-1">
+                <input type="checkbox" id="check-stop-1" onchange="handleCheckChange(1)" class="w-5 h-5 rounded-lg text-mountain-600 focus:ring-mountain-500 border-slate-300 cursor-pointer">
+              </label>
+            </div>
+
+            <p class="text-xs font-body text-slate-600 mb-3 bg-slate-50 p-2.5 rounded-xl border border-slate-100 leading-relaxed">
+              <i class="fa-solid fa-circle-check text-sky-500 mr-1"></i> วอร์มเครื่องยนต์ เช็กลมยางและสัมภาระรอบคัน ออกเดินทางมุ่งหน้าคลองห้าเพื่อรวมพล
+            </p>
+
+            <div class="flex items-center justify-between text-xs pt-1">
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-road mr-1"></i>ระยะทาง ~18 กม.</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=13.9296307,100.7378479" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 text-sky-700 font-semibold text-xs active:scale-95 transition">
+                <i class="fa-solid fa-location-arrow"></i> แผนที่
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STOP 2: รพ.สต. คลองห้า (จุดรวมพล 2 ล้อ) -->
+        <div class="relative group" id="stop-card-2">
+          <button onclick="toggleStop(2)" class="stop-marker absolute -left-6 top-3 w-6 h-6 rounded-full bg-sky-600 border-2 border-white shadow-md flex items-center justify-center text-[11px] font-bold text-white transition active:scale-90">
+            <span class="marker-text" id="marker-text-2">2</span>
+          </button>
+
+          <div class="glass-card rounded-3xl p-4 shadow-lg border-2 border-sky-300/80 bg-gradient-to-br from-white to-sky-50/50">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-1.5 mb-1 flex-wrap">
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-rose-500 text-white animate-pulse">
+                    <i class="fa-solid fa-flag text-[10px]"></i> 04:00 น. ตรง
+                  </span>
+                  <span class="text-[11px] font-bold text-rose-700 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200">
+                    ขบวน 2 ล้อ ล้อหมุน!
+                  </span>
+                </div>
+                <h3 class="text-base font-bold text-slate-900 leading-snug">2. รพ.สต. คลองห้า (จุดรวมพล 2 ล้อ)</h3>
+                <p class="text-xs text-slate-500">จุดรวมพลรถมอเตอร์ไซค์ 3 คัน ล้อหมุนพร้อมกัน</p>
+              </div>
+              <label class="flex items-center gap-1 cursor-pointer shrink-0 pt-1">
+                <input type="checkbox" id="check-stop-2" onchange="handleCheckChange(2)" class="w-5 h-5 rounded-lg text-mountain-600 focus:ring-mountain-500 border-slate-300 cursor-pointer">
+              </label>
+            </div>
+
+            <div class="bg-sky-50/90 p-3 rounded-2xl border border-sky-100 text-xs text-slate-700 space-y-1.5 mb-3 font-body">
+              <div class="font-bold text-sky-900 flex items-center gap-1.5">
+                <i class="fa-solid fa-list-check text-sky-600"></i> สิ่งที่ต้องทำก่อนออกเดินทาง:
+              </div>
+              <ul class="list-disc list-inside space-y-1 text-slate-600 pl-1 leading-relaxed">
+                <li>เช็กสัญญาณบลูทูธหมวกกันน็อก / เปิดระบบนำทาง</li>
+                <li><strong>จัดรูปขบวน:</strong> บอส หัวขบวน, เป้ (FORZA 2021) & ป็อบ&แฟน (XMAX 2019) สลับฟันปลา</li>
+                <li><span class="text-emerald-700 font-semibold">* รถกระบะบรรทุกสัมภาระส่วนใหญ่แล้ว และจะออกตามไปทีหลัง ไม่ต้องรอ</span></li>
+                <li>เริ่มยิงยาวเข้าสู่ ทล.21 (ถนนสระบุรี-หล่มสัก)</li>
+              </ul>
+            </div>
+
+            <div class="flex items-center justify-between text-xs pt-1">
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-road mr-1"></i>ระยะทาง ~95 กม.</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=14.0901324,100.7106403" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-600 text-white font-semibold text-xs active:scale-95 transition">
+                <i class="fa-solid fa-location-arrow"></i> แผนที่
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STOP 3: ปั๊ม ปตท. แยกพัฒนานิคม (WITH REAL PHOTO) -->
+        <div class="relative group" id="stop-card-3">
+          <button onclick="toggleStop(3)" class="stop-marker absolute -left-6 top-3 w-6 h-6 rounded-full bg-white border-2 border-sky-500 shadow-md flex items-center justify-center text-[11px] font-bold text-sky-700 transition active:scale-90">
+            <span class="marker-text" id="marker-text-3">3</span>
+          </button>
+
+          <div class="glass-card rounded-3xl p-4 shadow-md border border-white/80 ring-1 ring-slate-200/50">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div class="flex-1 min-w-0">
+                <span class="inline-block text-[11px] font-bold px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 mb-1">
+                  <i class="fa-regular fa-clock"></i> 05:30 - 06:00 น.
+                </span>
+                <h3 class="text-base font-bold text-slate-800 leading-snug">3. ปั๊ม ปตท. แยกพัฒนานิคม (ขาออก)</h3>
+                <p class="text-xs text-slate-500">จุดพักรถรอบแรก พักเครื่องยนต์ & ยืดเส้นยืดสาย</p>
+              </div>
+              <label class="flex items-center gap-1 cursor-pointer shrink-0 pt-1">
+                <input type="checkbox" id="check-stop-3" onchange="handleCheckChange(3)" class="w-5 h-5 rounded-lg text-mountain-600 focus:ring-mountain-500 border-slate-300 cursor-pointer">
+              </label>
+            </div>
+
+            <!-- Stop 3 Real Photo Card -->
+            <div class="relative rounded-2xl overflow-hidden shadow-sm group/img cursor-pointer border border-slate-200/80 photo-card-hover mb-3" onclick="openLightbox('photos/ptt_phatthananikhom.png', 'ปั๊ม ปตท. แยกพัฒนานิคม (ขาออก) ลพบุรี', 'จุดพักรถจุดแรก เติมน้ำมันรอบที่ 1 และจิบกาแฟอเมซอนยามเช้าตรู่')">
+              <img src="photos/ptt_phatthananikhom.png" alt="ปั๊ม ปตท. แยกพัฒนานิคม ลพบุรี" class="w-full h-40 object-cover object-center transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/65 to-transparent"></div>
+              <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-xs">
+                <span class="font-medium drop-shadow"><i class="fa-solid fa-gas-pump text-amber-400 mr-1"></i> ปตท. แยกพัฒนานิคม</span>
+                <span class="text-[10px] bg-black/50 backdrop-blur-md px-2 py-0.5 rounded-full border border-white/20"><i class="fa-solid fa-expand mr-1"></i>ดูรูป</span>
+              </div>
+            </div>
+
+            <div class="text-xs font-body text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1 mb-3 leading-relaxed">
+              <p><i class="fa-solid fa-gas-pump text-amber-500 mr-1.5"></i> <strong>เติมน้ำมันรอบที่ 1:</strong> รถ XMAX / FORZA เติมให้เต็มถัง</p>
+              <p><i class="fa-solid fa-mug-hot text-amber-700 mr-1.5"></i> พักจิบกาแฟ Cafe Amazon ยามเช้าตรู่ รอรับแสงแรกบนถนน</p>
+            </div>
+
+            <div class="flex items-center justify-between text-xs pt-1">
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-road mr-1"></i>ระยะทาง ~115 กม.</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=14.8364621,100.9100535" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 text-sky-700 font-semibold text-xs active:scale-95 transition">
+                <i class="fa-solid fa-location-arrow"></i> แผนที่
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STOP 4: ปตท. พัฒนพล บึงสามพัน เพชรบูรณ์ (WITH REAL PHOTO) -->
+        <div class="relative group" id="stop-card-4">
+          <button onclick="toggleStop(4)" class="stop-marker absolute -left-6 top-3 w-6 h-6 rounded-full bg-white border-2 border-mountain-500 shadow-md flex items-center justify-center text-[11px] font-bold text-mountain-700 transition active:scale-90">
+            <span class="marker-text" id="marker-text-4">4</span>
+          </button>
+
+          <div class="glass-card rounded-3xl p-4 shadow-md border border-white/80 ring-1 ring-slate-200/50">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-1.5 mb-1 flex-wrap">
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
+                    <i class="fa-regular fa-clock"></i> 08:00 - 09:00 น.
+                  </span>
+                  <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">
+                    🍗 มื้อเช้าจัดเต็ม
+                  </span>
+                </div>
+                <h3 class="text-base font-bold text-slate-800 leading-snug">4. ปตท. พัฒนพล บึงสามพัน (เพชรบูรณ์)</h3>
+                <p class="text-xs text-slate-500">ทานไก่ย่างวิเชียรบุรี & พักเครื่องยนต์</p>
+              </div>
+              <label class="flex items-center gap-1 cursor-pointer shrink-0 pt-1">
+                <input type="checkbox" id="check-stop-4" onchange="handleCheckChange(4)" class="w-5 h-5 rounded-lg text-mountain-600 focus:ring-mountain-500 border-slate-300 cursor-pointer">
+              </label>
+            </div>
+
+            <!-- Stop 4 Real Photo Card -->
+            <div class="relative rounded-2xl overflow-hidden shadow-sm group/img cursor-pointer border border-slate-200/80 photo-card-hover mb-3" onclick="openLightbox('photos/ptt_buengsamphan.png', 'ปตท. พัฒนพล บึงสามพัน เพชรบูรณ์', 'จุดพักเติมพลังมื้อเช้า ทานไก่ย่างวิเชียรบุรีรสเด็ด และเช็กความพร้อมก่อนขึ้นเขา')">
+              <img src="photos/ptt_buengsamphan.png" alt="ปตท. บึงสามพัน เพชรบูรณ์" class="w-full h-40 object-cover object-center transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/65 to-transparent"></div>
+              <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-xs">
+                <span class="font-medium drop-shadow"><i class="fa-solid fa-utensils text-amber-400 mr-1"></i> ปตท. บึงสามพัน</span>
+                <span class="text-[10px] bg-black/50 backdrop-blur-md px-2 py-0.5 rounded-full border border-white/20"><i class="fa-solid fa-expand mr-1"></i>ดูรูป</span>
+              </div>
+            </div>
+
+            <div class="text-xs font-body text-slate-600 bg-emerald-50/50 p-2.5 rounded-xl border border-emerald-100 space-y-1.5 mb-3 leading-relaxed">
+              <p><i class="fa-solid fa-utensils text-emerald-600 mr-1.5"></i> <strong>เติมพลังมื้อเช้า:</strong> ไก่ย่างวิเชียรบุรี ส้มตำ ข้าวเหนียวร้อนๆ</p>
+              <p><i class="fa-solid fa-wrench text-slate-600 mr-1.5"></i> <strong>ตรวจเช็กสภาพ:</strong> เช็กลมยาง เติมน้ำมันรอบที่ 2 ก่อนเริ่มไต่เขา</p>
+              <p><i class="fa-solid fa-phone text-sky-600 mr-1.5"></i> <strong>อัปเดตทีมกระบะ:</strong> โทรเช็กพิกัดทีมกระบะที่กำลังตามมา</p>
+            </div>
+
+            <div class="flex items-center justify-between text-xs pt-1">
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-road mr-1"></i>ระยะทาง ~115 กม.</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=15.8100806,101.0066568" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-mountain-50 text-mountain-700 font-semibold text-xs active:scale-95 transition">
+                <i class="fa-solid fa-location-arrow"></i> แผนที่
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STOP 5: วัดพระธาตุผาซ่อนแก้ว (WITH REAL PHOTO) -->
+        <div class="relative group" id="stop-card-5">
+          <button onclick="toggleStop(5)" class="stop-marker absolute -left-6 top-3 w-6 h-6 rounded-full bg-white border-2 border-mountain-500 shadow-md flex items-center justify-center text-[11px] font-bold text-mountain-700 transition active:scale-90">
+            <span class="marker-text" id="marker-text-5">5</span>
+          </button>
+
+          <div class="glass-card rounded-3xl p-4 shadow-md border border-white/80 ring-1 ring-slate-200/50">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div class="flex-1 min-w-0">
+                <span class="inline-block text-[11px] font-bold px-2 py-0.5 rounded-full bg-mountain-100 text-mountain-800 mb-1">
+                  <i class="fa-regular fa-clock"></i> 10:30 - 11:45 น.
+                </span>
+                <h3 class="text-base font-bold text-slate-800 leading-snug">5. วัดพระธาตุผาซ่อนแก้ว เขาค้อ</h3>
+                <p class="text-xs text-slate-500">ไหว้พระ ถ่ายรูปจุดชมวิวพาโนรามา พักคลายเมื่อย</p>
+              </div>
+              <label class="flex items-center gap-1 cursor-pointer shrink-0 pt-1">
+                <input type="checkbox" id="check-stop-5" onchange="handleCheckChange(5)" class="w-5 h-5 rounded-lg text-mountain-600 focus:ring-mountain-500 border-slate-300 cursor-pointer">
+              </label>
+            </div>
+
+            <!-- Stop 5 Real Photo Card -->
+            <div class="relative rounded-2xl overflow-hidden shadow-sm group/img cursor-pointer border border-slate-200/80 photo-card-hover mb-3" onclick="openLightbox('photos/wat_phasornkaew.png', 'วัดพระธาตุผาซ่อนแก้ว & จุดชมวิวเขาค้อ', 'ชมความงดงามพระพุทธเจ้า 5 พระองค์ท่ามกลางสายหมอกและขุนเขาเพชรบูรณ์')">
+              <img src="photos/wat_phasornkaew.png" alt="วัดพระธาตุผาซ่อนแก้ว เขาค้อ" class="w-full h-44 object-cover object-center transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/65 to-transparent"></div>
+              <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-xs">
+                <span class="font-medium drop-shadow"><i class="fa-solid fa-camera text-sky-400 mr-1"></i> พระพุทธเจ้า 5 พระองค์</span>
+                <span class="text-[10px] bg-black/50 backdrop-blur-md px-2 py-0.5 rounded-full border border-white/20"><i class="fa-solid fa-expand mr-1"></i>ดูรูป</span>
+              </div>
+            </div>
+
+            <div class="text-xs font-body text-slate-600 bg-slate-50 p-2.5 rounded-xl border border-slate-100 space-y-1 mb-3 leading-relaxed">
+              <p><i class="fa-solid fa-camera text-sky-600 mr-1.5"></i> ถ่ายรูปกลุ่มคู่กับมอเตอร์ไซค์ริมผา มองเห็นพระพุทธเจ้า 5 พระองค์สีขาว</p>
+              <p><i class="fa-solid fa-mug-saucer text-amber-700 mr-1.5"></i> พักจิบกาแฟชมวิว 360 องศา เตรียมแรงก่อนขึ้นโค้งพับผ้าสู่ยอดภูทับเบิก</p>
+            </div>
+
+            <div class="flex items-center justify-between text-xs pt-1">
+              <span class="text-slate-400 text-[11px]"><i class="fa-solid fa-road mr-1"></i>ระยะทาง ~50 กม. (ขึ้นเขาชัน)</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=16.790141,101.0509634" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-mountain-50 text-mountain-700 font-semibold text-xs active:scale-95 transition">
+                <i class="fa-solid fa-location-arrow"></i> แผนที่
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- STOP 6: ปลายทาง เดอะเวิลด์ & ม่อนทับเบิก (WITH REAL PHOTO) -->
+        <div class="relative group" id="stop-card-6">
+          <button onclick="toggleStop(6)" class="stop-marker absolute -left-6 top-3 w-6 h-6 rounded-full bg-mountain-600 border-2 border-white shadow-lg flex items-center justify-center text-[11px] font-bold text-white transition active:scale-90">
+            <span class="marker-text" id="marker-text-6"><i class="fa-solid fa-check"></i></span>
+          </button>
+
+          <div class="glass-card rounded-3xl p-4 shadow-xl border-2 border-mountain-400 bg-gradient-to-br from-white via-mountain-50/40 to-emerald-100/30">
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <div class="flex-1 min-w-0">
+                <span class="inline-block text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-600 text-white mb-1 shadow-sm">
+                  <i class="fa-solid fa-campground"></i> ปลายทาง: 13:00 - 13:30 น.
+                </span>
+                <h3 class="text-base font-extrabold text-slate-900 leading-snug">6. เดอะเวิลด์ & ม่อนทับเบิก (จุดกางเต็นท์)</h3>
+                <p class="text-xs text-mountain-800 font-medium">จุดหมายปลายทางยอดดอยภูทับเบิก สัมผัสไอหมอก</p>
+              </div>
+              <label class="flex items-center gap-1 cursor-pointer shrink-0 pt-1">
+                <input type="checkbox" id="check-stop-6" onchange="handleCheckChange(6)" class="w-5 h-5 rounded-lg text-mountain-600 focus:ring-mountain-500 border-slate-300 cursor-pointer">
+              </label>
+            </div>
+
+            <!-- Stop 6 Real Destination Photo Card -->
+            <div class="relative rounded-2xl overflow-hidden shadow-sm group/img cursor-pointer border border-slate-200/80 photo-card-hover mb-3" onclick="openLightbox('photos/destination_thapboek.png', 'จุดกางเต็นท์ภูทับเบิก & ม่อนทับเบิก ปลายทาง', 'จุดหมายปลายทางยอดดอย วิวกะหล่ำปลีและทะเลหมอกสุดสายตา พร้อมกางเต็นท์และปาร์ตี้หมูกระทะ')">
+              <img src="photos/destination_thapboek.png" alt="จุดกางเต็นท์ภูทับเบิก ปลายทาง" class="w-full h-44 sm:h-52 object-cover object-center transition duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/65 to-transparent"></div>
+              <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-xs">
+                <span class="font-medium drop-shadow"><i class="fa-solid fa-mountain-sun text-emerald-400 mr-1"></i> ลานกางเต็นท์ภูทับเบิก</span>
+                <span class="text-[10px] bg-black/50 backdrop-blur-md px-2 py-0.5 rounded-full border border-white/20"><i class="fa-solid fa-expand mr-1"></i>ดูรูป</span>
+              </div>
+            </div>
+
+            <div class="bg-white/90 p-3 rounded-2xl border border-mountain-200/80 text-xs text-slate-700 space-y-1.5 mb-3 font-body leading-relaxed">
+              <div class="font-bold text-emerald-900 flex items-center gap-1.5">
+                <i class="fa-solid fa-cloud-sun text-emerald-600"></i> ถึงเป้าหมายปลอดภัย สัมผัสความหนาว:
+              </div>
+              <ul class="list-disc list-inside space-y-1 text-slate-600 pl-1">
+                <li>เช็กอินเข้าที่พัก / จองพื้นที่กางเต็นท์รับลมหนาว</li>
+                <li><strong>นัดพบทีมกระบะ:</strong> รถกระบะมาสมทบ ขนสัมภาระหนัก เต็นท์หลังคา อุปกรณ์แคมป์ปิ้งลงที่พัก</li>
+                <li>พักผ่อนชมทะเลหมอกยามบ่าย ถ่ายรูปวิวแปลงกะหล่ำปลีสุดสายตา</li>
+                <li>เตรียมสั่งหมูกระทะร้อนๆ ปะทะลมหนาวยามค่ำคืน 🥓🍲⛺</li>
+              </ul>
+            </div>
+
+            <div class="flex items-center justify-between text-xs pt-1">
+              <span class="text-emerald-700 font-bold text-[11px]"><i class="fa-solid fa-circle-check mr-1"></i> จบทริปการเดินทางวันแรก</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=16.8950347,101.1083476" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-mountain-600 text-white font-semibold text-xs active:scale-95 transition">
+                <i class="fa-solid fa-location-arrow"></i> แผนที่
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 6: CONVOY FORMATION & SAFETY GUIDE -->
+    <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-lg border border-white/80 ring-1 ring-slate-200/50">
+      <h2 class="text-base font-bold text-slate-800 flex items-center gap-2 mb-3">
+        <i class="fa-solid fa-shield-halved text-sky-600"></i> ผังขบวน & เทคนิคขี่ขึ้น-ลงภูทับเบิก
+      </h2>
+
+      <!-- Visual Convoy Diagram -->
+      <div class="bg-slate-900 text-white p-3.5 sm:p-4 rounded-2xl mb-4 relative overflow-hidden">
+        <div class="text-[11px] text-slate-400 font-medium mb-3 flex items-center justify-between">
+          <span><i class="fa-solid fa-arrows-down-to-line text-sky-400"></i> รูปแบบขบวนสลับฟันปลา (Staggered Formation)</span>
+          <span class="text-emerald-400 text-[10px]">ระยะห่าง 2-3 วินาที</span>
+        </div>
+
+        <!-- Road lanes visualization -->
+        <div class="space-y-2.5 py-1">
+          <!-- Lead 1: Boss -->
+          <div class="flex items-center gap-2">
+            <div class="w-full sm:w-3/4 flex justify-start">
+              <div class="bg-sky-500 text-white px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-motorcycle text-[10px]"></i>
+                <span>#1 บอส • XMAX 300 [หัวขบวน/ไลน์ซ้าย]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mid 1: Pae -->
+          <div class="flex items-center gap-2">
+            <div class="w-full flex justify-end">
+              <div class="bg-rose-500 text-white px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-motorcycle text-[10px]"></i>
+                <span>#2 เป้ • FORZA 350 [ไลน์ขวา]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mid 2: Pop & Fan -->
+          <div class="flex items-center gap-2">
+            <div class="w-full sm:w-3/4 flex justify-start">
+              <div class="bg-blue-600 text-white px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-motorcycle text-[10px]"></i>
+                <span>#3 ป็อบ & แฟน • XMAX 300 [ไลน์ซ้าย]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sweeper / Pickup Follows later -->
+          <div class="pt-2 border-t border-slate-700/80">
+            <div class="bg-gradient-to-r from-mountain-700 to-emerald-700 text-white px-3 py-2 rounded-xl text-xs font-bold flex flex-col sm:flex-row sm:items-center justify-between gap-1 shadow-sm">
+              <span class="flex items-center gap-1.5">
+                <i class="fa-solid fa-truck-pickup"></i> ทีมซัพพอร์ตกระบะเซอร์วิส (ออกตามไปทีหลัง)
+              </span>
+              <span class="text-[10px] bg-black/40 px-2 py-0.5 rounded text-emerald-200">
+                ขนเต็นท์หลังคา & เสบียงไปสมทบ
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mountain CVT Riding Guide -->
+      <div class="space-y-2 text-xs font-body leading-relaxed">
+        <div class="p-3 rounded-2xl bg-amber-50 border border-amber-200/80 text-amber-950">
+          <div class="font-bold font-sans text-amber-800 flex items-center gap-1.5 mb-1">
+            <i class="fa-solid fa-triangle-exclamation text-amber-600"></i> ข้อควรระวังรถสายพาน (CVT) ตอนลงเขาชัน:
+          </div>
+          <p>
+            <strong>ห้ามปล่อยไหลฟรีเด็ดขาด!</strong> หากความเร็วตกจนคลัตช์หลุด (รถไหลเหมือนเกียร์ว่าง) ให้แตะคันเร่งเบาๆ นิดหนึ่งเพื่อให้คลัตช์จับและมี <strong>Engine Brake</strong> ช่วยฉุดความเร็ว
+          </p>
+        </div>
+
+        <div class="p-3 rounded-2xl bg-sky-50 border border-sky-100 text-slate-700">
+          <div class="font-bold font-sans text-sky-800 flex items-center gap-1.5 mb-1">
+            <i class="fa-solid fa-circle-info text-sky-600"></i> การใช้เบรกบนโค้งพับผ้า:
+          </div>
+          <p>
+            เบรกหนักก่อนเข้าโค้งในทางตรง ไม่กำเบรกแช่ยาวตลอดทางชัน (สลับใช้เบรกหน้า-หลัง หรือปล่อยเป็นช่วงๆ เพื่อลดความร้อนสะสม ป้องกันน้ำมันเบรกเดือด)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 7: INTERACTIVE PREPARATION CHECKLIST -->
+    <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-lg border border-white/80 ring-1 ring-slate-200/50">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-clipboard-check text-mountain-600"></i> เช็กลิสต์เตรียมความพร้อม
+        </h2>
+        <button onclick="resetChecklist()" class="text-xs text-slate-400 hover:text-rose-500 transition">
+          <i class="fa-solid fa-rotate-left"></i> รีเซ็ต
+        </button>
+      </div>
+
+      <!-- Checklist Tabs -->
+      <div class="flex gap-2 mb-3">
+        <button id="tab-vehicle" onclick="switchChecklistTab('vehicle')" class="flex-1 py-2 text-xs font-bold rounded-xl bg-sky-600 text-white shadow-sm transition">
+          <i class="fa-solid fa-wrench mr-1"></i> รถและอุปกรณ์
+        </button>
+        <button id="tab-camping" onclick="switchChecklistTab('camping')" class="flex-1 py-2 text-xs font-bold rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 transition">
+          <i class="fa-solid fa-person-hiking mr-1"></i> คนและแคมป์ปิ้ง
+        </button>
+      </div>
+
+      <!-- Vehicle Checklist List -->
+      <div id="list-vehicle" class="space-y-2">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Camping Checklist List -->
+      <div id="list-camping" class="space-y-2 hidden">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Add Custom Item Input -->
+      <div class="mt-4 pt-3 border-t border-slate-100 flex gap-2">
+        <input type="text" id="custom-item-input" placeholder="เพิ่มรายการของฉัน..." class="flex-1 text-xs px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-sky-500">
+        <button onclick="addCustomItem()" class="px-3.5 py-2 bg-mountain-600 hover:bg-mountain-700 text-white rounded-xl text-xs font-bold transition active:scale-95">
+          <i class="fa-solid fa-plus"></i> เพิ่ม
+        </button>
+      </div>
+    </div>
+
+    <!-- CARD 8: EMERGENCY HOTLINES -->
+    <div class="glass-card rounded-3xl p-4 sm:p-5 shadow-lg border border-rose-100">
+      <h2 class="text-base font-bold text-slate-800 flex items-center gap-2 mb-3">
+        <i class="fa-solid fa-phone-volume text-rose-500"></i> เบอร์โทรฉุกเฉินตลอดเส้นทาง
+      </h2>
+      <div class="grid grid-cols-2 gap-2">
+        <a href="tel:1193" class="flex items-center justify-between p-3 rounded-2xl bg-rose-50/80 border border-rose-100 active:scale-95 transition">
+          <div>
+            <div class="text-[11px] text-rose-700 font-medium">ตำรวจทางหลวง</div>
+            <div class="text-sm sm:text-base font-extrabold text-slate-900">1193</div>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-rose-600 text-white flex items-center justify-center text-xs shadow-sm">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+        </a>
+
+        <a href="tel:1669" class="flex items-center justify-between p-3 rounded-2xl bg-amber-50/80 border border-amber-100 active:scale-95 transition">
+          <div>
+            <div class="text-[11px] text-amber-700 font-medium">กู้ชีพฉุกเฉิน</div>
+            <div class="text-sm sm:text-base font-extrabold text-slate-900">1669</div>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-amber-600 text-white flex items-center justify-center text-xs shadow-sm">
+            <i class="fa-solid fa-ambulance"></i>
+          </div>
+        </a>
+
+        <a href="tel:1644" class="flex items-center justify-between p-3 rounded-2xl bg-sky-50/80 border border-sky-100 active:scale-95 transition">
+          <div>
+            <div class="text-[11px] text-sky-700 font-medium">สวพ.91</div>
+            <div class="text-sm sm:text-base font-extrabold text-slate-900">1644</div>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-sky-600 text-white flex items-center justify-center text-xs shadow-sm">
+            <i class="fa-solid fa-radio"></i>
+          </div>
+        </a>
+
+        <a href="tel:1155" class="flex items-center justify-between p-3 rounded-2xl bg-emerald-50/80 border border-emerald-100 active:scale-95 transition">
+          <div>
+            <div class="text-[11px] text-emerald-700 font-medium">ตำรวจท่องเที่ยว</div>
+            <div class="text-sm sm:text-base font-extrabold text-slate-900">1155</div>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm">
+            <i class="fa-solid fa-shield-cat"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER NOTE -->
+    <footer class="text-center text-xs text-slate-400 py-6 font-body">
+      ทริป 2 ล้อ 4 ล้อ บุกภูทับเบิก 2026 • ขอให้เดินทางปลอดภัย สัมผัสทะเลหมอกอย่างมีความสุข 🏍️🚗🏔️
+    </footer>
+
+  </main>
+
+  <!-- STICKY BOTTOM BAR -->
+  <aside aria-label="แถบการเดินทางด่วน" class="fixed bottom-3 left-1/2 -translate-x-1/2 w-11/12 max-w-md z-40">
+    <div class="bg-slate-900/95 text-white backdrop-blur-md px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl shadow-2xl border border-white/10 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></div>
+        <div>
+          <div class="text-[10px] text-slate-400 leading-none">เป้าหมายเวลา</div>
+          <div class="text-xs font-bold text-sky-300">ถึงภูทับเบิก ≤ 13:30 น.</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="shareTrip()" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs active:scale-95 transition" title="แชร์ทริป">
+          <i class="fa-solid fa-share-nodes"></i>
+        </button>
+        <a href="https://www.google.com/maps/dir/Lam+Luk+Ka+Subdistrict+Municipality+Office,+WPHQ%2BV35,+Bueng+Kham+Phroi,+Lam+Luk+Ka+District,+Pathum+Thani+12150/Khlong+Ha+Health+Center,+3PR6%2B27J,+Khlong+Ha,+Khlong+Luang+District,+Pathum+Thani+12120/PTT+Station+(Petrol%2BEV),+RWP6%2BH2M,+Di+Lang,+Phatthana+Nikhom+District,+Lopburi+15220/PTT+Station+(Petrol%2BEV)+Pattanapol+Petroleum,+Thanon+Saeaburi+-+Lomsak,+Bueng+Sam+Phan,+Bueng+Sam+Phan+District,+Phetchabun+67160/Wat+Phra+That+Pha+Sorn+Kaew,+95,+Khaem+Son,+Khao+Kho+District,+Phetchabun+67280/%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B8%9A%E0%B8%9A%E0%B8%B4%E0%B8%81+%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97+366+Tambon+Ban+Noen,+Lom+Kao+District,+Phetchabun+67120/The+World+Phu+Thap+Boek,+%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%8814+Tambon+Wang+Ban,+Lom+Kao+District,+Phetchabun+67120/@15.4318282,99.6290676,748943m/data=!3m2!1e3!4b1!4m44!4m43!1m5!1m1!1s0x311d7bbf361825c5:0x509557abcf6de3f3!2m2!1d100.7378479!2d13.9296307!1m5!1m1!1s0x311d822a845a1261:0x673b460a2afed04d!2m2!1d100.7106403!2d14.0901324!1m5!1m1!1s0x311e0b6af00dae8f:0x36af19c8bb121dbe!2m2!1d100.9100535!2d14.8364621!1m5!1m1!1s0x311fc10000000001:0x4d218c5efb5cfd67!2m2!1d101.0066568!2d15.8100806!1m5!1m1!1s0x31204347c0cca891:0xea28cf0075b52c82!2m2!1d101.0509634!2d16.790141!1m5!1m1!1s0x3120592a0f0795d9:0xef4f1f63cfdbfb73!2m2!1d101.1083476!2d16.8950347!1m5!1m1!1s0x3120592465ee4e97:0xbcd301799dab4956!2m2!1d101.1292749!2d16.9422411!3e9" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="px-3.5 py-1.5 rounded-xl bg-mountain-600 hover:bg-mountain-500 text-white font-bold text-xs flex items-center gap-1.5 active:scale-95 transition shadow-md">
+          <i class="fa-solid fa-diamond-turn-right text-xs"></i> นำทาง
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- JAVASCRIPT APPLICATION LOGIC -->
+  <script>
+    const TOTAL_STOPS = 6;
+    let stopState = JSON.parse(localStorage.getItem('thapboek_stops') || '{}');
+
+    // Default Checklists
+    const defaultVehicleChecklist = [
+      { id: 'v1', text: 'ตรวจเช็กลมยางหน้า-หลัง (XMAX บอส, XMAX ป็อบ, FORZA เป้)', checked: false },
+      { id: 'v2', text: 'ระดับน้ำมันเครื่อง และสภาพผ้าเบรกหน้า-หลัง', checked: false },
+      { id: 'v3', text: 'สายพาน CVT และระบบไฟส่องสว่างรอบคัน', checked: false },
+      { id: 'v4', text: 'ชุดปะยางแทงหนอนฉุกเฉิน + ปั๊มลมพกพา', checked: false },
+      { id: 'v5', text: 'เชือกตาข่ายมัดของ & ผ้าใบคลุมกระบะกันฝน', checked: false },
+    ];
+
+    const defaultCampingChecklist = [
+      { id: 'c1', text: 'เสื้อการ์ด & ถุงมือสำหรับขี่มอเตอร์ไซค์', checked: false },
+      { id: 'c2', text: 'เสื้อกันหนาวหนาๆ (ยอดภูทับเบิกลมแรง 16-22°C)', checked: false },
+      { id: 'c3', text: 'เต็นท์นอน, ถุงนอน, แผ่นรองนอน (ขึ้นรถกระบะ)', checked: false },
+      { id: 'c4', text: 'พาวเวอร์แบงก์ + ไฟฉายแคมป์ปิ้ง + ปลั๊กพ่วง', checked: false },
+      { id: 'c5', text: 'ยาสามัญ (ยาแก้ปวด, ยาแก้เมารถโค้ง, พลาสเตอร์)', checked: false },
+      { id: 'c6', text: 'เสื้อกันฝนพกพา (เผื่อหมอกหนาหรือละอองฝนตก)', checked: false }
+    ];
+
+    let vehicleChecklist = JSON.parse(localStorage.getItem('thapboek_check_v') || JSON.stringify(defaultVehicleChecklist));
+    let campingChecklist = JSON.parse(localStorage.getItem('thapboek_check_c') || JSON.stringify(defaultCampingChecklist));
+    let activeTab = 'vehicle';
+
+    // Lightbox Controls
+    function openLightbox(src, title, desc) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const titleEl = document.getElementById('lightbox-title');
+      const descEl = document.getElementById('lightbox-desc');
+
+      img.src = src;
+      titleEl.innerText = title || '';
+      descEl.innerText = desc || '';
+
+      modal.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        modal.classList.remove('opacity-0');
+        modal.classList.add('opacity-100');
+      });
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('opacity-0');
+      modal.classList.remove('opacity-100');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    // Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Custom Toast
+    function showToast(msg, icon = 'fa-circle-check', isSuccess = true) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.innerText = msg;
+      toastIcon.className = `fa-solid ${icon} ${isSuccess ? 'text-mountain-400' : 'text-amber-400'} text-lg`;
+
+      toast.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2500);
+    }
+
+    // Toggle Checkbox from timeline
+    function handleCheckChange(stopNumber) {
+      const checkbox = document.getElementById(`check-stop-${stopNumber}`);
+      stopState[stopNumber] = checkbox.checked;
+      localStorage.setItem('thapboek_stops', JSON.stringify(stopState));
+      updateStopVisuals();
+      if(checkbox.checked) {
+        showToast(`ผ่านจุดแวะที่ ${stopNumber} เรียบร้อยแล้ว!`, 'fa-circle-check', true);
+      }
+    }
+
+    function toggleStop(stopNumber) {
+      const checkbox = document.getElementById(`check-stop-${stopNumber}`);
+      if (checkbox) {
+        checkbox.checked = !checkbox.checked;
+        handleCheckChange(stopNumber);
+      }
+    }
+
+    // Update Progress bar and Visual styles
+    function updateStopVisuals() {
+      let checkedCount = 0;
+      for (let i = 1; i <= TOTAL_STOPS; i++) {
+        const checkbox = document.getElementById(`check-stop-${i}`);
+        const card = document.getElementById(`stop-card-${i}`);
+        const markerText = document.getElementById(`marker-text-${i}`);
+        const isChecked = !!stopState[i];
+
+        if (checkbox) checkbox.checked = isChecked;
+
+        if (isChecked) {
+          checkedCount++;
+          if (card) {
+            card.classList.add('opacity-80');
+          }
+          if (markerText) {
+            markerText.innerHTML = '<i class="fa-solid fa-check"></i>';
+          }
+        } else {
+          if (card) {
+            card.classList.remove('opacity-80');
+          }
+          if (markerText && i !== 6) {
+            markerText.innerText = i;
+          }
+        }
+      }
+
+      const percentage = Math.round((checkedCount / TOTAL_STOPS) * 100);
+      const pBar = document.getElementById('progress-bar');
+      const pText = document.getElementById('progress-text');
+
+      if (pBar) pBar.style.width = `${percentage}%`;
+      if (pText) pText.innerText = `${checkedCount} / ${TOTAL_STOPS} จุดแวะ (${percentage}%)`;
+    }
+
+    // Render Checklist Items
+    function renderChecklists() {
+      const vContainer = document.getElementById('list-vehicle');
+      const cContainer = document.getElementById('list-camping');
+
+      vContainer.innerHTML = vehicleChecklist.map((item, idx) => `
+        <div class="flex items-center justify-between p-2.5 rounded-2xl bg-white border border-slate-100 shadow-sm hover:border-sky-200 transition">
+          <label class="flex items-center gap-2.5 text-xs text-slate-700 cursor-pointer select-none flex-1">
+            <input type="checkbox" ${item.checked ? 'checked' : ''} onchange="toggleChecklistItem('v', ${idx})" class="w-4 h-4 rounded text-sky-600 focus:ring-sky-500 border-slate-300">
+            <span class="${item.checked ? 'line-through text-slate-400' : 'font-medium'}">${item.text}</span>
+          </label>
+          <button onclick="removeChecklistItem('v', ${idx})" class="text-slate-300 hover:text-rose-500 p-1 text-xs" title="ลบรายการ">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      `).join('');
+
+      cContainer.innerHTML = campingChecklist.map((item, idx) => `
+        <div class="flex items-center justify-between p-2.5 rounded-2xl bg-white border border-slate-100 shadow-sm hover:border-mountain-200 transition">
+          <label class="flex items-center gap-2.5 text-xs text-slate-700 cursor-pointer select-none flex-1">
+            <input type="checkbox" ${item.checked ? 'checked' : ''} onchange="toggleChecklistItem('c', ${idx})" class="w-4 h-4 rounded text-mountain-600 focus:ring-mountain-500 border-slate-300">
+            <span class="${item.checked ? 'line-through text-slate-400' : 'font-medium'}">${item.text}</span>
+          </label>
+          <button onclick="removeChecklistItem('c', ${idx})" class="text-slate-300 hover:text-rose-500 p-1 text-xs" title="ลบรายการ">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function toggleChecklistItem(type, idx) {
+      if (type === 'v') {
+        vehicleChecklist[idx].checked = !vehicleChecklist[idx].checked;
+        localStorage.setItem('thapboek_check_v', JSON.stringify(vehicleChecklist));
+      } else {
+        campingChecklist[idx].checked = !campingChecklist[idx].checked;
+        localStorage.setItem('thapboek_check_c', JSON.stringify(campingChecklist));
+      }
+      renderChecklists();
+    }
+
+    function removeChecklistItem(type, idx) {
+      if (type === 'v') {
+        vehicleChecklist.splice(idx, 1);
+        localStorage.setItem('thapboek_check_v', JSON.stringify(vehicleChecklist));
+      } else {
+        campingChecklist.splice(idx, 1);
+        localStorage.setItem('thapboek_check_c', JSON.stringify(campingChecklist));
+      }
+      renderChecklists();
+      showToast('ลบรายการเรียบร้อย', 'fa-trash', false);
+    }
+
+    function addCustomItem() {
+      const input = document.getElementById('custom-item-input');
+      const val = input.value.trim();
+      if (!val) return;
+
+      const newItem = { id: 'custom_' + Date.now(), text: val, checked: false };
+      if (activeTab === 'vehicle') {
+        vehicleChecklist.push(newItem);
+        localStorage.setItem('thapboek_check_v', JSON.stringify(vehicleChecklist));
+      } else {
+        campingChecklist.push(newItem);
+        localStorage.setItem('thapboek_check_c', JSON.stringify(campingChecklist));
+      }
+
+      input.value = '';
+      renderChecklists();
+      showToast('เพิ่มรายการเตรียมตัวแล้ว!', 'fa-plus', true);
+    }
+
+    function switchChecklistTab(tab) {
+      activeTab = tab;
+      const btnV = document.getElementById('tab-vehicle');
+      const btnC = document.getElementById('tab-camping');
+      const listV = document.getElementById('list-vehicle');
+      const listC = document.getElementById('list-camping');
+
+      if (tab === 'vehicle') {
+        btnV.className = 'flex-1 py-2 text-xs font-bold rounded-xl bg-sky-600 text-white shadow-sm transition';
+        btnC.className = 'flex-1 py-2 text-xs font-bold rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 transition';
+        listV.classList.remove('hidden');
+        listC.classList.add('hidden');
+      } else {
+        btnC.className = 'flex-1 py-2 text-xs font-bold rounded-xl bg-mountain-600 text-white shadow-sm transition';
+        btnV.className = 'flex-1 py-2 text-xs font-bold rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 transition';
+        listC.classList.remove('hidden');
+        listV.classList.add('hidden');
+      }
+    }
+
+    function resetChecklist() {
+      vehicleChecklist = [...defaultVehicleChecklist];
+      campingChecklist = [...defaultCampingChecklist];
+      localStorage.setItem('thapboek_check_v', JSON.stringify(vehicleChecklist));
+      localStorage.setItem('thapboek_check_c', JSON.stringify(campingChecklist));
+      renderChecklists();
+      showToast('รีเซ็ตรายการเริ่มต้นเรียบร้อย', 'fa-rotate-left', true);
+    }
+
+    function shareTrip() {
+      const shareData = {
+        title: 'ทริป 2 ล้อ 4 ล้อ บุกภูทับเบิก 2026 🏍️🚗💨',
+        text: 'แผนการเดินทางและจุดแวะพักทริปภูทับเบิก 2 ล้อ 3 คัน (บอส, ป็อบ&แฟน, เป้) & ทีมกระบะ ออก 04:00 ถึง 13:00 น.',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => copyToClipboard(window.location.href));
+      } else {
+        copyToClipboard(window.location.href);
+      }
+    }
+
+    function copyToClipboard(text) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast('คัดลอกลิงก์ทริปแล้ว ส่งเข้าไลน์ได้เลย!', 'fa-copy', true);
+      } catch (err) {
+        showToast('กรุณาคัดลอก URL ในเบราว์เซอร์', 'fa-circle-exclamation', false);
+      }
+      document.body.removeChild(textArea);
+    }
+
+    document.getElementById('custom-item-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        addCustomItem();
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      updateStopVisuals();
+      renderChecklists();
+    });
+  </script>
+</body>
+</html>
