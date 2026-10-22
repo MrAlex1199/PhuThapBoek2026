@@ -127,34 +127,61 @@
     <div class="absolute -left-20 bottom-10 w-72 h-72 bg-emerald-500 rounded-full blur-3xl opacity-20 pointer-events-none"></div>
 
     <div class="relative max-w-xl mx-auto text-center z-10 pt-7 px-4">
-      <!-- Live Badge Pill -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/20 text-xs font-medium text-sky-200 mb-2.5 shadow-lg">
-        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-        <span class="font-semibold tracking-wide">ทริป 2 ล้อ & 4 ล้อ บุกยอดดอย 2026</span>
-      </div>
-      
-      <!-- Date Banner Badge with Glow (UI/UX Pro Max) -->
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-2xl bg-gradient-to-r from-amber-500/25 via-rose-500/25 to-emerald-500/25 backdrop-blur-md border border-amber-300/40 text-amber-200 mb-3 shadow-xl">
-        <i class="fa-solid fa-calendar-days text-amber-400 text-sm"></i>
-        <span class="font-extrabold text-xs sm:text-sm tracking-wide text-white">
-          7 - 8 พฤศจิกายน 2026
-        </span>
-        <span class="bg-amber-400/20 text-amber-300 text-[10px] px-2 py-0.5 rounded-full border border-amber-400/40 font-semibold">
-          เสาร์ - อาทิตย์ (2 วัน 1 คืน)
-        </span>
-      </div>
+      <!-- Dark Glassmorphic Hero Plate for Maximum Readability (UI/UX Pro Max) -->
+      <div class="bg-slate-950/75 backdrop-blur-md rounded-3xl p-4 sm:p-6 border border-white/20 shadow-2xl mb-5">
+        <!-- Live Badge Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-emerald-300 mb-3 shadow-md">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+          </span>
+          <span class="tracking-wide text-slate-100">ทริป 2 ล้อ & 4 ล้อ บุกยอดดอย 2026</span>
+        </div>
 
-      <!-- Main Header Title (Mobile Friendly) -->
-      <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight drop-shadow-lg text-white mb-2 leading-snug thai-balanced">
-        ทริป 2 ล้อ 4 ล้อ<br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-teal-200 to-emerald-300">
-          บุกพิชิตภูทับเบิก! ⛰️
-        </span>
-      </h1>
+        <!-- Main Header Title (Crisp Readability & Radiant Glow) -->
+        <h1 class="text-2xl sm:text-4xl font-black tracking-tight text-white mb-3.5 leading-snug thai-balanced drop-shadow-md">
+          ทริป 2 ล้อ 4 ล้อ<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 font-black drop-shadow-[0_2px_14px_rgba(245,158,11,0.45)]">
+            บุกพิชิตภูทับเบิก! ⛰️
+          </span>
+        </h1>
 
-      <p class="text-xs sm:text-sm text-sky-100/90 font-light max-w-sm mx-auto mb-4 leading-relaxed">
-        ระยะทางไป-กลับ ~820 กม. • สัมผัสไอหมอกและความหนาว 16°C
-      </p>
+        <!-- 3 Stat Badges / Pills Grid (UI/UX Pro Max) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 max-w-lg mx-auto text-left mt-3">
+          <!-- Stat 1: Date -->
+          <div class="flex items-center gap-3 bg-white/10 hover:bg-white/15 backdrop-blur-sm px-3.5 py-2 rounded-2xl border border-white/15 transition shadow-sm">
+            <div class="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center text-sm border border-amber-400/30 shrink-0">
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+            <div>
+              <div class="text-[10px] text-amber-300/90 font-medium">วันเดินทาง (2 วัน 1 คืน)</div>
+              <div class="text-xs sm:text-sm font-bold text-white tracking-wide">7 - 8 พ.ย. 2026</div>
+            </div>
+          </div>
+
+          <!-- Stat 2: Distance -->
+          <div class="flex items-center gap-3 bg-white/10 hover:bg-white/15 backdrop-blur-sm px-3.5 py-2 rounded-2xl border border-white/15 transition shadow-sm">
+            <div class="w-9 h-9 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center text-sm border border-sky-400/30 shrink-0">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <div>
+              <div class="text-[10px] text-sky-200/90 font-medium">ระยะทางไป-กลับ</div>
+              <div class="text-xs sm:text-sm font-bold text-white tracking-wide">~820 กิโลเมตร</div>
+            </div>
+          </div>
+
+          <!-- Stat 3: Weather -->
+          <div class="flex items-center gap-3 bg-white/10 hover:bg-white/15 backdrop-blur-sm px-3.5 py-2 rounded-2xl border border-white/15 transition shadow-sm">
+            <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center text-sm border border-emerald-400/30 shrink-0">
+              <i class="fa-solid fa-temperature-arrow-down"></i>
+            </div>
+            <div>
+              <div class="text-[10px] text-emerald-200/90 font-medium">สัมผัสไอหมอกหนาว</div>
+              <div class="text-xs sm:text-sm font-bold text-white tracking-wide">16°C ยอดดอย</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Quick Fleet Summary Card (Mobile Ergonomic) -->
       <div class="bg-slate-900/80 backdrop-blur-md rounded-2xl p-3.5 border border-white/15 max-w-md mx-auto mb-5 text-left shadow-xl">
